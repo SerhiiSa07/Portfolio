@@ -4,6 +4,7 @@ import {Logo} from "components/logo/Logo";
 import {Container} from "components/Container";
 import {FlexWrapper} from "components/FlexWrapper";
 import {HeaderMenu} from "layout/header/headerMenu/HeaderMenu";
+import {HeaderName} from "layout/header/headerName/HeaderName";
 
 const items = ['Home', 'Works', 'Skills', 'Testimony', 'Contact']
 
@@ -12,7 +13,10 @@ export const Header = () => {
 		<StyledHeader>
 			<Container>
 				<FlexWrapper justify={'space-between'} align={'center'}>
+					<FlexHeaderLogoName>
 					<Logo/>
+					<HeaderName/>
+					</FlexHeaderLogoName>
 					<HeaderMenu menuItems={items}/>
 				</FlexWrapper>
 			</Container>
@@ -31,3 +35,9 @@ const StyledHeader = styled.header`
   z-index: 9999;
 `
 
+const FlexHeaderLogoName = styled.div`
+
+  display: flex;
+  align-items: center;
+  
+`
