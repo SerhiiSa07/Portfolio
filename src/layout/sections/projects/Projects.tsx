@@ -1,66 +1,40 @@
 import React from 'react';
 import styled from "styled-components";
-import {Container} from "components/Container";
+import ChertNodes from '../../../assets/images/ChertNodes.jpg'
+import ProtectX from '../../../assets/images/Protect_X.jpg'
+import Kahoot from '../../../assets/images/Kahoot.jpg'
+import {Project} from "layout/sections/projects/Project";
+
 
 export const Projects = () => {
 	return (
-		<Container>
-		<StyleProject>
-			<GreatBox>With great power comes great electricity bill
-			</GreatBox>
-			<StyleBox>- Dr. Who</StyleBox>
-		</StyleProject>
-		</Container>
+		<StylesProject>
+			<ProjectHeader>projects</ProjectHeader>
+<ProjectContainer>
+			<Project src={ChertNodes} title={'HTML SCSS Python Flask'} name={'ChertNodes'} text={'Minecraft servers hosting'} button_1={'Live <~>'} button_2={'Cached >='}/>
+			<Project src={ProtectX} title={'React Express Discord.js Node.js'} name={'ProtectX'} text={'Discord anti-crash bot'} button_1={'Live <~>'}/>
+			<Project src={Kahoot} title={'CSS Express Node.js'} name={'Kahoot Answers Viewer'} text={'Get answers to your kahoot quiz'} button_1={'Live <~>'}/>
+</ProjectContainer>
+		</StylesProject>
 	);
 };
 
-
-const StyleProject = styled.div`
-  position: relative;
-  padding: 20px 40px;
-  background-color: #1c1c1c;
-  color: #fff;
-  border: 1px solid #fff;
-  text-align: right; /* Align text to the right */
-  margin-bottom: 20px;
-`
-
-const GreatBox = styled.div`
-  position: relative;
-  //padding: 20px 40px;
-  background-color: #1c1c1c;
-  color: #fff;
-  border: 2px solid #fff;
-  width: 712px;
-  height: 95px;
-  text-align: center;
-  margin-left: 200px;
- padding-top: 30px;
+const StylesProject = styled.div`
   
-  &::before{
-    content: '“';
-    position: absolute;
-	margin: -50px;
-    font-size: 3em;
-    color: #fff;
-	
-  }
-  &::after {
-    content: '“';
-    position: absolute;
-    padding: 45px;
-    font-size: 3em;
-    color: #fff;
-  }
+  background-color: #481e1e;
   
 `
+const ProjectHeader = styled.div`
+  font-family: 'Fira Code', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 41.98px;
+  text-align: left;
+  margin-left: 30px;
+`
 
-const StyleBox = styled.div`
-  width: 162px;
-  height: 63px;
+const ProjectContainer = styled.div`
+  display: flex;
+  justify-content: space-evenly;
   text-align: center;
-  color: #888;
-  border: 2px solid #fff;
-  padding: 20px;
-  margin-left: 750px;
 `
