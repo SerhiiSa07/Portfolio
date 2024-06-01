@@ -29,7 +29,6 @@ export const Main = () => {
 
 const StyledMain = styled.div`
   min-height: 100vh;
-  background-color: #2d2929;
   display: flex;
 `
 

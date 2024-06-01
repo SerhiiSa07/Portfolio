@@ -9,7 +9,6 @@ type ProjectPropsType = {
 	text: string
 	button_1: string
 	button_2?: string
-
 }
 
 export const Project = (props: ProjectPropsType) => {
@@ -23,12 +22,9 @@ export const Project = (props: ProjectPropsType) => {
 
 					<ButtonContainer>
 						<ButtonOne>{props.button_1}</ButtonOne>
-						<ButtonTwo>{props.button_2}</ButtonTwo>
+							<ButtonTwo>{props.button_2}</ButtonTwo>
 					</ButtonContainer>
-
 				</ProjectContent>
-				<div></div>
-				<div></div>
 			</ProjectWrapper>
 	);
 };
@@ -94,7 +90,6 @@ border: 2px solid ${theme.colors.accept};
 padding: 5px;
 `
 
-const ButtonTwo = styled.span`
-  border: 2px solid ${theme.colors.font};
+const ButtonTwo = styled.div`
   padding: 5px;
 `
