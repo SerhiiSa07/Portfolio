@@ -6,6 +6,7 @@ import {Works} from "layout/sections/works/Works";
 import {Footer} from "layout/footer/Footer";
 import {Home} from "layout/sections/home/Home";
 import {Projects} from "layout/sections/projects/Projects";
+import {Skills} from "layout/sections/skills/Skills";
 
 
 function App() {
@@ -15,8 +16,9 @@ function App() {
             <Main/>
             <Home/>
             <Projects/>
-            <Post/>
-            <Works/>
+            <Skills/>
+            {/*<Post/>*/}
+            {/*<Works/>*/}
             <Footer/>
         </div>
     );

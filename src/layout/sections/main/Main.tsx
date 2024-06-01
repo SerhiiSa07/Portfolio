@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
-//import photo from '../../../assets/images/596207.jpg'
 import {FlexWrapper} from "components/FlexWrapper";
 import {Container} from "components/Container";
 import {theme} from "styles/Theme";
-import dek from	'../../../assets/images/Group 46.svg'
+import dek from	'../../../assets/images/Group_Currrently.svg'
 
 export const Main = () => {
 	return (
@@ -90,8 +89,6 @@ const Name = styled.h1`
 	  z-index: -1;
     }
   }
-  
-
 `
 const SmallText = styled.h1`
   color: ${theme.colors.accept};

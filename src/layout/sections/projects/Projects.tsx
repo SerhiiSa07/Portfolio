@@ -5,12 +5,13 @@ import ProtectX from '../../../assets/images/Protect_X.jpg'
 import Kahoot from '../../../assets/images/Kahoot.jpg'
 import {Project} from "layout/sections/projects/Project";
 import {Container} from "components/Container";
+import {theme} from "styles/Theme";
 
 
 export const Projects = () => {
 	return (
 		<Container>
-			<ProjectHeader>projects</ProjectHeader>
+			<ProjectHeader><span>projects</span></ProjectHeader>
 			<ProjectContainer>
 				<Project src={ChertNodes} title={'HTML SCSS Python Flask'} name={'ChertNodes'}
 						 text={'Minecraft servers hosting'} button_1={'Live <~>'} button_2={'Cached >='}/>
@@ -23,17 +24,36 @@ export const Projects = () => {
 	);
 };
 
-const ProjectHeader = styled.div`
+const ProjectContainer = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+`
+
+const ProjectHeader = styled.h1`
   font-family: 'Fira Code', sans-serif;
   font-size: 32px;
   font-weight: 500;
   line-height: 41.98px;
   text-align: left;
   margin-left: 30px;
-`
 
-const ProjectContainer = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
+
+  span{
+    position: relative;
+
+    &::before{
+      content: '';
+      margin-left: 180px;
+      margin-bottom: 20px;
+      width: 511px;
+      height: 1px;
+      background-color: ${theme.colors.accept};
+
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  
+
 `
