@@ -25,7 +25,7 @@ const StyledFooter = styled.footer`
 
 `
 const Name = styled.h2`
-
+padding-bottom: 20px;
 `
 
 const SocialIconLink = styled.footer`

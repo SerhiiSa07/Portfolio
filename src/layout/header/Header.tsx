@@ -6,7 +6,7 @@ import {FlexWrapper} from "components/FlexWrapper";
 import {HeaderMenu} from "layout/header/headerMenu/HeaderMenu";
 import {HeaderName} from "layout/header/headerName/HeaderName";
 
-const items = ['Home', 'Projects', 'Works', 'Skills', 'Testimony', 'Contact']
+const items = ['Home',  'Projects', 'Skills', 'About_Me',/*'Works', 'Testimony',*/ 'Contact']
 
 export const Header = () => {
 	return (
@@ -36,8 +36,9 @@ const StyledHeader = styled.header`
 `
 
 const FlexHeaderLogoName = styled.div`
-
+  
   display: flex;
   align-items: center;
   
 `
+

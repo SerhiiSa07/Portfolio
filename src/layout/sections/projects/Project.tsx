@@ -9,6 +9,7 @@ type ProjectPropsType = {
 	text: string
 	button_1: string
 	button_2?: string
+
 }
 
 export const Project = (props: ProjectPropsType) => {
@@ -71,10 +72,11 @@ const ProjectText = styled.h3`
   text-align: left;
   margin-bottom: 8px;
   margin-left: 16px;
+  
 `
 
 const ButtonContainer = styled.div`
-display: flex;
+  display: flex;
   gap: 30px;
   font-family: 'Fira Code', sans-serif;
   font-size: 16px;
@@ -82,7 +84,6 @@ display: flex;
   line-height: 20.99px;
   text-align: center;
   margin-left: 32px;
-  
 `
 
 const ButtonOne = styled.div`
@@ -92,4 +93,5 @@ padding: 5px;
 
 const ButtonTwo = styled.div`
   padding: 5px;
+  
 `

@@ -54,6 +54,4 @@ const ProjectHeader = styled.h1`
       bottom: 0;
     }
   }
-  
-
 `

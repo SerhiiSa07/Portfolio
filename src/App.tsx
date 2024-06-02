@@ -7,6 +7,9 @@ import {Footer} from "layout/footer/Footer";
 import {Home} from "layout/sections/home/Home";
 import {Projects} from "layout/sections/projects/Projects";
 import {Skills} from "layout/sections/skills/Skills";
+import {AboutMe} from "layout/sections/about_me/AboutMe";
+import {Abouts} from "layout/sections/about_me/Abouts";
+import {Contact} from "layout/sections/contacts/Contact";
 
 
 function App() {
@@ -17,8 +20,10 @@ function App() {
             <Home/>
             <Projects/>
             <Skills/>
+            <Abouts/>
             {/*<Post/>*/}
             {/*<Works/>*/}
+            <Contact/>
             <Footer/>
         </div>
     );
