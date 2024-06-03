@@ -5,6 +5,7 @@ import {Container} from "components/Container";
 import {FlexWrapper} from "components/FlexWrapper";
 import {HeaderMenu} from "layout/header/headerMenu/HeaderMenu";
 import {HeaderName} from "layout/header/headerName/HeaderName";
+import {MobileMenu} from "layout/header/mobileMenu/MobileMenu";
 
 const items = ['Home',  'Projects', 'Skills', 'About_Me',/*'Works', 'Testimony',*/ 'Contact']
 
@@ -18,6 +19,7 @@ export const Header = () => {
 					<HeaderName/>
 					</FlexHeaderLogoName>
 					<HeaderMenu menuItems={items}/>
+					<MobileMenu menuItems={items}/>
 				</FlexWrapper>
 			</Container>
 		</StyledHeader>

@@ -16,7 +16,8 @@ export const Contact = () => {
 				<ContactMessage>
 					<ContactName>Message me here:</ContactName>
 					<ContactDiscord><img src={discordIcon} alt="Discord" className="icon" />   StalkerDOK   </ContactDiscord>
-					<ContactEmail><img src={emailIcon} alt="Email" className="icon" />    875dfsb6435278785@gmail.com   </ContactEmail>
+					<ContactEmail><img src={emailIcon} alt="Email" className="icon" />    875dfsb6435278785@gmail.com
+					</ContactEmail>
 				</ContactMessage>
 			</ContactWrapper>
 		</Container>
