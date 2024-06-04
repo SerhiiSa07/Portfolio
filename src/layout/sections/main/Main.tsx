@@ -4,12 +4,13 @@ import {FlexWrapper} from "components/FlexWrapper";
 import {Container} from "components/Container";
 import {theme} from "styles/Theme";
 import dek from	'../../../assets/images/Group_Currrently.svg'
+import {font} from "styles/Common";
 
 export const Main = () => {
 	return (
 		<StyledMain>
 			<Container>
-				<FlexWrapper align={'center'} justify={'space-between'}>
+				<FlexWrapper align={'center'} justify={'space-between'} >
 					<StyledContent>
 						<Name>
 							<span>Serhii</span> is a
@@ -33,6 +34,9 @@ const StyledMain = styled.div`
 
 const StyledContent = styled.div`
 	color: #ffffff;
+  @media (max-width: 1135px){
+    text-align: center;
+  }
 `
 
 const PhotoWrapper = styled.div`
@@ -44,10 +48,16 @@ const PhotoWrapper = styled.div`
 	width: 360px;
 	height: 470px;
 	border: 5px solid ${theme.colors.accept};
+	
 	position: absolute;
 	top: -24px;
 	left: 24px;
 	z-index: -1;
+	
+	@media ${theme.media.mobile}{
+	  width: 314px;
+	  height: 414px;
+	}
   }
 `
 
@@ -55,6 +65,11 @@ const Photo = styled.img`
   width: 477px;
   height: 386px;
   object-fit: cover;
+  
+  @media ${theme.media.mobile} {
+    width: 316px;
+    height: 260px;
+  }
 `
 
 const Portfolio = styled.div`
@@ -64,15 +79,16 @@ const Portfolio = styled.div`
 `
 
 const MainTitle = styled.h1`
-  
+  ${font({weight: 400, Fmax: 27, Fmin: 20})}
 `
+
 const Name = styled.h1`
-  font-size: 32px;
-  font-weight: 600;
+  ${font({family: "'Fira Code', sans-serif", weight: 600, Fmax: 32})}
+  /*font-size: 32px;
+  font-weight: 600;*/
   letter-spacing: 0.05em;
   margin: 10px 0;
   
-
   span{
 	position: relative;
     z-index: 1;
@@ -90,7 +106,9 @@ const Name = styled.h1`
     }
   }
 `
+
 const SmallText = styled.h1`
   color: ${theme.colors.accept};
  
 `
+

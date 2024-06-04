@@ -11,18 +11,20 @@ const items = ['Home',  'Projects', 'Skills', 'About_Me',/*'Works', 'Testimony',
 
 export const Header = () => {
 	return (
+
 		<StyledHeader>
 			<Container>
-				<FlexWrapper justify={'space-between'} align={'center'}>
+				<FlexWrapper justify={'space-between'} align={'center'} wrap={'wrap'}>
 					<FlexHeaderLogoName>
 					<Logo/>
 					<HeaderName/>
 					</FlexHeaderLogoName>
 					<HeaderMenu menuItems={items}/>
-					<MobileMenu menuItems={items}/>
+					{/*<MobileMenu menuItems={items}/>*/}
 				</FlexWrapper>
 			</Container>
 		</StyledHeader>
+
 	);
 };
 

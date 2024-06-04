@@ -28,6 +28,10 @@ const ProjectContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+  @media (max-width: 1135px){
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `
 
 const ProjectHeader = styled.h1`

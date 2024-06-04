@@ -10,6 +10,7 @@ import {Skills} from "layout/sections/skills/Skills";
 import {AboutMe} from "layout/sections/about_me/AboutMe";
 import {Abouts} from "layout/sections/about_me/Abouts";
 import {Contact} from "layout/sections/contacts/Contact";
+import {Container} from "components/Container";
 
 
 function App() {

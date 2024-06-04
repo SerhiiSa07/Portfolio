@@ -26,8 +26,6 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
 					})}
 				</ul>
 			</MobileMenuPopup>
-
-
 		</StyledMobileMenu>
 	);
 };

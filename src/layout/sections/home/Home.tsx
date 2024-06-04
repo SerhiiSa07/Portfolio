@@ -18,6 +18,10 @@ export const Home = () => {
 const StyleHome = styled.div`
   position: relative;
   padding: 20px 40px;
+
+  @media (max-width: 1135px){
+	display: none;
+  }
 `
 
 const GreatBox = styled.div`
