@@ -10,6 +10,9 @@ import {MobileMenu} from "layout/header/mobileMenu/MobileMenu";
 const items = ['Home',  'Projects', 'Skills', 'About_Me',/*'Works', 'Testimony',*/ 'Contact']
 
 export const Header = () => {
+
+
+
 	return (
 
 		<StyledHeader>
@@ -20,7 +23,7 @@ export const Header = () => {
 					<HeaderName/>
 					</FlexHeaderLogoName>
 					<HeaderMenu menuItems={items}/>
-					{/*<MobileMenu menuItems={items}/>*/}
+					<MobileMenu menuItems={items}/>
 				</FlexWrapper>
 			</Container>
 		</StyledHeader>

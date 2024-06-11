@@ -1,15 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled, {css} from "styled-components";
 import {theme} from "styles/Theme";
 
-export const MobileMenu = (props: { menuItems: Array<string> }) => {
+export const MobileMenu: React.FC<{ menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
+
+	const [menuIsOpen, setMenuIsOpen] = useState(false)
+	const onBurgerBtnClick = () => {
+		setMenuIsOpen(!menuIsOpen)
+	}
+
 	return (
 		<StyledMobileMenu>
-			<BurgerButton isOpen={true}>
+			<BurgerButton isOpen={menuIsOpen} onClick={onBurgerBtnClick}>
 				<span>
 				</span>
 			</BurgerButton>
-			<MobileMenuPopup isOpen={true}>
+			<MobileMenuPopup isOpen={menuIsOpen} onClick={() => {setMenuIsOpen(false)}}>
 				<ul>
 					{props.menuItems.map((item, index) => {
 						return <ListItem key={index}>

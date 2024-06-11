@@ -6,8 +6,7 @@ export const Home = () => {
 	return (
 		<Container>
 			<StyleHome>
-				<GreatBox>With great power comes great electricity bill
-				</GreatBox>
+				<GreatBox>With great power comes great electricity bill</GreatBox>
 				<StyleBox>- Dr. Who</StyleBox>
 			</StyleHome>
 		</Container>

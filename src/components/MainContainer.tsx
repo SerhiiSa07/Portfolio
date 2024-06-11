@@ -19,7 +19,7 @@ export const MainContainer = (props: MainContainerPropsType) => {
 
 
 export const MainContainerDesign = styled.section`
-width: 50%;
+	width: 50%;
   text-align: center;
 `
 
