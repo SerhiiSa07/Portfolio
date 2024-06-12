@@ -63,8 +63,6 @@ const SkillsDoubleText = styled.div`
   text-align: left;
 `
 
-
-
 const ContainerText = styled.div`
   border: 1px solid ${theme.colors.font};
   padding: 10px;

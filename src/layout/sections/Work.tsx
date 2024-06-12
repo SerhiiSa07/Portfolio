@@ -15,6 +15,7 @@ export const Work = (props: WorkPropsType) => {
 		<Container>
 		<WorkContainer>
 			<Image src={props.src} alt=''/>
+			<Button>viev project</Button>
 			<WorkContent>
 				<WorksTitle>{props.title}</WorksTitle>
 				<WorksYea>{props.yea}</WorksYea>
