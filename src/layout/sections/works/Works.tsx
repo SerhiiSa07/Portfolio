@@ -5,6 +5,7 @@ import {Work} from "layout/sections/Work";
 import designImage from '../../../assets/images/Rectangle.png'
 import typographyImage from '../../../assets/images/Rectangle_3.png'
 import {TabMenu} from "layout/sections/works/tabMenu/TabMenu";
+import {Container} from "components/Container";
 
 //const tabsItem = ['All', 'Landing page', 'React']
 
@@ -31,46 +32,46 @@ const tabsItems: Array<{ status: 'all' | 'landing' | 'react' | 'spa', title: str
 	}
 ]
 
-const workData = [
+const worksData = [
 
 	{
 		title: 'Designing Dashboards',
 		src: designImage,
 		yea: '2020  Dashboard',
 		text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-		type: 'All'
+		type: 'all'
 	},
 	{
 		title: 'Vibrant Portraits of 2020',
 		src: designImage,
 		yea: '2020  Illustration',
 		text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-		type: 'Landing page'
+		type: 'landing'
 	},
 	{
 		title: '36 Days of Malayalam type',
 		src: typographyImage,
 		yea: '2018  Typography',
 		text: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-		type: 'React'
+		type: 'react'
 	}
 
 ]
 
 export const Works: React.FC = () => {
 	const [currentFilterStatus, setCurrentFilterStatus] = useState('all')
-	let filteredWorks = workData
+	let filteredWorks = worksData
 
 	if (currentFilterStatus === 'landing') {
-		filteredWorks = workData.filter(work => work.type === 'landing')
+		filteredWorks = worksData.filter(work => work.type === 'landing')
 	}
 
-	if (currentFilterStatus === 'landing') {
-		filteredWorks = workData.filter(work => work.type === 'react')
+	if (currentFilterStatus === 'react') {
+		filteredWorks = worksData.filter(work => work.type === 'react')
 	}
 
-	if (currentFilterStatus === 'landing') {
-		filteredWorks = workData.filter(work => work.type === 'spa')
+	if (currentFilterStatus === 'spa') {
+		filteredWorks = worksData.filter(work => work.type === 'spa')
 	}
 
 	function changeFilterStatus(value: 'all' | 'landing' | 'react' | 'spa'){
@@ -79,12 +80,13 @@ export const Works: React.FC = () => {
 
 	return (
 		<StyledWorks>
+			<Container>
 			<PostsTitle>Featured works</PostsTitle>
 			<TabMenu tabsItems={tabsItems}
 					 changeFilterStatus={changeFilterStatus}
 					 currentFilterStatus={currentFilterStatus}
 			/>
-			{workData.map((w) => {
+			{filteredWorks.map((w) => {
 				return <Work
 					src={w.src}
 					title={w.title}
@@ -92,6 +94,7 @@ export const Works: React.FC = () => {
 					text={w.text}/>
 			})
 			}
+			</Container>
 		</StyledWorks>
 	);
 };

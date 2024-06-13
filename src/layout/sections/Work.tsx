@@ -53,3 +53,7 @@ const WorksYea = styled.h3`
 const WorksText = styled.section`
   
 `
+
+const Button = styled.button`
+  
+`
