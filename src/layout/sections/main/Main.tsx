@@ -5,6 +5,8 @@ import {Container} from "components/Container";
 import {theme} from "styles/Theme";
 import dek from	'../../../assets/images/Group_Currrently.svg'
 import {font} from "styles/Common";
+import Typewriter from 'typewriter-effect';
+import Tilt from 'react-parallax-tilt';
 
 export const Main = () => {
 	return (
@@ -16,10 +18,26 @@ export const Main = () => {
 							<span>Serhii</span> is a
 							front-end developer
 						</Name>
-						<SmallText>He crafts responsive websites where technologies meet creativity</SmallText>
+						<SmallText>
+							<Typewriter
+								options={{
+									strings: ['He crafts responsive websites where technologies meet creativity'],
+									autoStart: true,
+									loop: true,
+									delay: 200
+								}}
+							/>
+						</SmallText>
 						<MainTitle>Contact me!!!</MainTitle>
 					</StyledContent>
-					<PhotoWrapper><Photo src={dek} alt=''/><Portfolio>Currently working on Portfolio</Portfolio></PhotoWrapper>
+					<Tilt>
+					<PhotoWrapper>
+
+						<Photo src={dek} alt=''/>
+
+						<Portfolio>Currently working on Portfolio</Portfolio>
+					</PhotoWrapper>
+					</Tilt>
 				</FlexWrapper>
 			</Container>
 		</StyledMain>

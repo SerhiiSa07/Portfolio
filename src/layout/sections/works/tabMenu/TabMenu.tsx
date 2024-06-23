@@ -10,6 +10,7 @@ type TabMenuPropsType = {
 	currentFilterStatus: string
 }
 
+
 export const TabMenu = (props: TabMenuPropsType) => {
 	return (
 		<StyledTabMenu>
@@ -35,6 +36,7 @@ const StyledTabMenu = styled.nav`
    width: 100%;
    border: 1px solid red;
    margin: 0 auto 40px;
+   
  }
 
 `
@@ -71,7 +73,6 @@ const Link = styled.a<{ active?: boolean }>`
 	
 	${props => props.active && css<{active?: boolean}>`
 	height: 10px;
-	
 	
 	`}
   }

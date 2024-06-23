@@ -24,11 +24,13 @@ export const Contact = () => {
 	);
 };
 
-const ContactWrapper = styled.div`
-	display: flex;
-  	justify-content: space-between;
+const ContactWrapper = styled.section`
+  display: flex;
+  justify-content: space-between;
+  position: relative;
   padding-top: 200px;
   padding-bottom: 40px;
+
 `
 
 const ContactContainer = styled.div`

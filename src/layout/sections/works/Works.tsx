@@ -101,7 +101,7 @@ export const Works: React.FC = () => {
 
 
 const StyledWorks = styled.section`
-  
+  position: relative;
   min-height: 100vh;
   background-color: #49608a;
   

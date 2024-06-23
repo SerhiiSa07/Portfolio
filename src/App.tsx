@@ -11,11 +11,13 @@ import {AboutMe} from "layout/sections/about_me/AboutMe";
 import {Abouts} from "layout/sections/about_me/Abouts";
 import {Contact} from "layout/sections/contacts/Contact";
 import {Container} from "components/Container";
+import {Particle} from "components/particle/Particle";
 
 
 function App() {
     return (
         <div className="App">
+            <Particle/>
             <Header/>
             <Main/>
             <Home/>

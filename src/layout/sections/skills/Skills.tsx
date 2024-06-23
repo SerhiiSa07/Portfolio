@@ -27,7 +27,8 @@ export const Skills = () => {
 	);
 };
 
-const SkillsWrapper = styled.div`
+const SkillsWrapper = styled.section`
+  position: relative;
   /*width: 1024px;
   height: 365px;*/
   
