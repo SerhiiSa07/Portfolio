@@ -7,11 +7,8 @@ import {HeaderMenu} from "layout/header/headerMenu/HeaderMenu";
 import {HeaderName} from "layout/header/headerName/HeaderName";
 import {MobileMenu} from "layout/header/mobileMenu/MobileMenu";
 
-const items = ['Home',  'Projects', 'Skills', 'About_Me',/*'Works', 'Testimony',*/ 'Contact']
 
 export const Header = () => {
-
-
 
 	return (
 
@@ -22,8 +19,8 @@ export const Header = () => {
 					<Logo/>
 					<HeaderName/>
 					</FlexHeaderLogoName>
-					<HeaderMenu menuItems={items}/>
-					<MobileMenu menuItems={items}/>
+					<HeaderMenu/>
+					<MobileMenu/>
 				</FlexWrapper>
 			</Container>
 		</StyledHeader>

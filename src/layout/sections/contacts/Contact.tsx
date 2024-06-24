@@ -5,11 +5,11 @@ import {theme} from "styles/Theme";
 import discordIcon from '../../../assets/images/Discord.svg'
 import emailIcon  from '../../../assets/images/Email.svg'
 
-export const Contact = () => {
+export const Contact: React.FC = () => {
 	return (
 		<Container>
 			<ContactWrapper>
-				<ContactContainer>
+				<ContactContainer id={'contact'}>
 					<ContactTitle><span>contacts</span></ContactTitle>
 					<ContactText>I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me</ContactText>
 				</ContactContainer>
@@ -30,7 +30,6 @@ const ContactWrapper = styled.section`
   position: relative;
   padding-top: 200px;
   padding-bottom: 40px;
-
 `
 
 const ContactContainer = styled.div`

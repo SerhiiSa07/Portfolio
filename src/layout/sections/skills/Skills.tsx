@@ -7,7 +7,7 @@ import {theme} from "styles/Theme";
 
 export const Skills = () => {
 	return (
-		<SkillsWrapper>
+		<SkillsWrapper id={'skills'}>
 			<Container>
 		<SkillsHeader><span>skills</span></SkillsHeader>
 			<SkillsContainer>

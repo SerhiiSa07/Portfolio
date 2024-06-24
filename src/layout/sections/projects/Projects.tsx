@@ -10,7 +10,8 @@ import {theme} from "styles/Theme";
 
 export const Projects = () => {
 	return (
-		<Container>
+		<Container >
+			<ProjectWrappers id={'projects'}>
 			<ProjectHeader><span>projects</span></ProjectHeader>
 			<ProjectContainer>
 				<Project src={ChertNodes} title={'HTML SCSS Python Flask'} name={'ChertNodes'}
@@ -20,9 +21,14 @@ export const Projects = () => {
 				<Project src={Kahoot} title={'CSS Express Node.js'} name={'Kahoot Answers Viewer'}
 						 text={'Get answers to your kahoot quiz'} button_1={'Live <~>'}/>
 			</ProjectContainer>
+			</ProjectWrappers>
 		</Container>
 	);
 };
+
+const ProjectWrappers = styled.section`
+ 
+`
 
 const ProjectContainer = styled.div`
   display: flex;
