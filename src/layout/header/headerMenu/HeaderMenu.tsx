@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 import {theme} from "styles/Theme";
+import {Link} from "react-scroll";
+
 
 //const items = ['Home',  'Projects', 'Skills', 'About_Me',/*'Works', 'Testimony',*/ 'Contact']
 
@@ -42,7 +44,8 @@ export const HeaderMenu: React.FC = () => {
 			<ul>
 				{items.map((item, index) => {
 					return <ListItem key={index}>
-						<Link href={`#${item.href}`}>
+						<NavLink to={item.href}
+								 smooth={true}>
 							{item.title}
 							<Mask>
 								<span>{item.title}</span>
@@ -50,7 +53,7 @@ export const HeaderMenu: React.FC = () => {
 							<Mask>
 								<span>{item.title}</span>
 							</Mask>
-						</Link>
+						</NavLink>
 					</ListItem>
 				})}
 			</ul>
@@ -72,7 +75,7 @@ ul{
 	
 `
 
-const Link = styled.a`
+const NavLink = styled(Link)`
 	font-family: 'Fira Code', sans-serif;
   font-weight: 400;
   font-size: 30px;
